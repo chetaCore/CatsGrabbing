@@ -12,7 +12,3 @@ public class Barriers : MonoBehaviour
         }
     }
 }
-<<<<<<< HEAD
-=======
-    
->>>>>>> master

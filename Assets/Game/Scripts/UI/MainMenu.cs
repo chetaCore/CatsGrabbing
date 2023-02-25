@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 using DG.Tweening;
->>>>>>> master
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,15 +14,13 @@ public class MainMenu : MonoBehaviour
     private void StartGame()
     {
         EventSet.gameIsStarted?.Invoke();
-<<<<<<< HEAD
         gameObject.SetActive(false);
-=======
         DOTween.Sequence().AppendInterval(0.2f).OnComplete(() => gameObject.SetActive(false));
         
     }
     private void OnDestroy()
     {
         _startButton.onClick.RemoveListener(StartGame);
->>>>>>> master
+
     }
 }

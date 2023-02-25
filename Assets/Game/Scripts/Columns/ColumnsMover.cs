@@ -7,10 +7,7 @@ public class ColumnsMover : MonoBehaviour
 {
     private Sequence _seq;
     private Vector3 _startPositon;
-<<<<<<< HEAD
 
-=======
->>>>>>> master
     private bool _placement;
     public bool Placement { get => _placement; set => _placement = value; }
 

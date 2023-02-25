@@ -21,20 +21,14 @@ public class CreateGameElement : MonoBehaviour
 
     private void OnEnable()
     {
-<<<<<<< HEAD
         EventSet.characterFaced += () => DOTween.Sequence().AppendInterval(1f).OnComplete(ZeroingPosition);
-=======
         EventSet.characterDead += () => DOTween.Sequence().AppendInterval(1f).OnComplete(ZeroingPosition);
->>>>>>> master
     }
 
     private void OnDisable()
     {
-<<<<<<< HEAD
         EventSet.characterFaced -= () => DOTween.Sequence().AppendInterval(1f).OnComplete(ZeroingPosition);
-=======
         EventSet.characterDead -= () => DOTween.Sequence().AppendInterval(1f).OnComplete(ZeroingPosition);
->>>>>>> master
     }
 
     private void ZeroingPosition()
