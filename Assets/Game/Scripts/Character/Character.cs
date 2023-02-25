@@ -1,19 +1,10 @@
-<<<<<<< HEAD
-=======
 using DG.Tweening;
->>>>>>> master
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-<<<<<<< HEAD
-
-    private Rigidbody _rigidbody;
-
-    private int _characterDistance;
-=======
     [SerializeField] private MeshRenderer _mesh;
     [SerializeField] private int _startHp;
     [SerializeField] private int _hP;
@@ -42,17 +33,14 @@ public class Character : MonoBehaviour
             }        
         } 
     }
->>>>>>> master
 
     private void OnEnable()
     {
         EventSet.gameIsRestarted += () => _characterDistance = 0;
-<<<<<<< HEAD
     }
 
     private void Start()
     {
-=======
         EventSet.characterFaced += () => HP = 1;
         EventSet.heartIsTaken += () => _hP++;
         EventSet.gameIsRestarted += () => _hP = _startHp;
@@ -69,7 +57,6 @@ public class Character : MonoBehaviour
     private void Awake()
     {
         _hP = _startHp;
->>>>>>> master
         _rigidbody = GetComponent<Rigidbody>();
         _rigidbody.isKinematic = true;
     }
@@ -93,13 +80,6 @@ public class Character : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-    private void OnDisable()
-    {
-        EventSet.gameIsRestarted -= () => _characterDistance = 0;
-    }
-
-=======
     private void ChangeMeshState()
     {
         if (_mesh.enabled)
@@ -109,5 +89,4 @@ public class Character : MonoBehaviour
     }
 
 
->>>>>>> master
 }

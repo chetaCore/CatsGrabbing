@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 using DG.Tweening;
->>>>>>> master
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,11 +6,7 @@ using UnityEngine;
 public class Column : MonoBehaviour
 {
     [SerializeField] private int _heightPlayerSpace;
-<<<<<<< HEAD
-    
-=======
     [SerializeField] private AudioPlayer _audioPlayer;
->>>>>>> master
     private float _columnSpeed = 0.005f;
     private float _columnPitch = 0.03f;
     private Vector3 _startPosition;
@@ -48,30 +41,24 @@ public class Column : MonoBehaviour
         {
             if (place)
             {
-<<<<<<< HEAD
-                
-                while (Mathf.Round(transform.position.y) - transform.localScale.y / 2 != Mathf.Round(_heightPlayerSpace - _heightPlayerSpace * precentageMovement))
-                {
-
-=======
 
                 while (Mathf.Round(transform.position.y) - transform.localScale.y / 2 != Mathf.Round(_heightPlayerSpace - _heightPlayerSpace * precentageMovement))
                 {
->>>>>>> master
-                    transform.position += -Vector3.up * _columnPitch;
-                    yield return new WaitForSeconds(_columnSpeed);
+
+
+                    while (Mathf.Round(transform.position.y) - transform.localScale.y / 2 != Mathf.Round(_heightPlayerSpace - _heightPlayerSpace * precentageMovement))
+                    {
+                        transform.position += -Vector3.up * _columnPitch;
+                        yield return new WaitForSeconds(_columnSpeed);
+                    }
+
+                    while (Mathf.Round(transform.position.y) - transform.localScale.y / 2 != _heightPlayerSpace)
+                    {
+                        transform.position += Vector3.up * _columnPitch;
+                        yield return new WaitForSeconds(_columnSpeed);
+                    }
+
                 }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> master
-                while (Mathf.Round(transform.position.y) - transform.localScale.y / 2 != _heightPlayerSpace)
-                {
-                    transform.position += Vector3.up * _columnPitch;
-                    yield return new WaitForSeconds(_columnSpeed);
-                }
-
             }
             else
             {
@@ -92,17 +79,18 @@ public class Column : MonoBehaviour
         }
     }
 
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.TryGetComponent(out Character character))
+        private void OnCollisionEnter(Collision collision)
         {
-            EventSet.characterFaced.Invoke();
+            if (collision.gameObject.TryGetComponent(out Character character))
+            {
+                EventSet.characterFaced.Invoke();
+            }
         }
-    }
 
-    private void OnDisable()
-    {
-        EventSet.gameIsRestarted -= () => transform.position = _startPosition;
-    }
+
+        private void OnDisable()
+        {
+            EventSet.gameIsRestarted -= () => transform.position = _startPosition;
+        }
+   
 }

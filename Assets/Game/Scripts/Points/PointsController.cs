@@ -19,10 +19,10 @@ public class PointsController : MonoBehaviour
 
     private void PlayAnimation(int value)
     {
-<<<<<<< HEAD
+
         _animation.DORestart();
-=======
+
         _animation.DORestartById("up");
->>>>>>> master
+
     }
 }

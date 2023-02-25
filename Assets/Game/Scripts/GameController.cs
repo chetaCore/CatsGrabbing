@@ -19,9 +19,7 @@ public class GameController : MonoBehaviour
     {
         EventSet.gameIsStarted += () => StartCoroutine(CountDown());
         EventSet.gameIsRestarted += RestartGame;
-<<<<<<< HEAD
         EventSet.characterFaced += () => StartCoroutine(OpenDefeatMenu());
-=======
         EventSet.characterDead += () => StartCoroutine(OpenDefeatMenu());
     }
 
@@ -31,7 +29,6 @@ public class GameController : MonoBehaviour
         EventSet.gameIsRestarted -= RestartGame;
         EventSet.characterDead -= () => StartCoroutine(OpenDefeatMenu());
 
->>>>>>> master
     }
 
     private void Start()
@@ -77,16 +74,4 @@ public class GameController : MonoBehaviour
         _character.SetActive(true);
         StartCoroutine(CountDown());  
     }
-
-<<<<<<< HEAD
-    private void OnDisable()
-    {
-        EventSet.gameIsStarted -= () => StartCoroutine(CountDown());
-        EventSet.gameIsRestarted -= RestartGame;
-        EventSet.characterFaced -= () => StartCoroutine(OpenDefeatMenu());
-    }
-=======
-  
->>>>>>> master
-
 }

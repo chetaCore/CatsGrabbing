@@ -15,11 +15,8 @@ public class FishPoints : MonoBehaviour
 
 
     private Vector3 _startPosition;
-<<<<<<< HEAD
     private bool isUsed;
-=======
     private bool _isUsed;
->>>>>>> master
 
 
     private void Start()
@@ -31,22 +28,16 @@ public class FishPoints : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent(out Character character))
         {
-<<<<<<< HEAD
             if (isUsed) return;
-=======
             if (_isUsed) return;
->>>>>>> master
 
             EventSet.gamePointTaken.Invoke(_pointValue);
             _glowParticle.gameObject.SetActive(false);
             _audio.Play();
             _takeParticle.Play();
 
-<<<<<<< HEAD
             isUsed = true;
-=======
             _isUsed = true;
->>>>>>> master
 
             _meshRenderer.enabled = false;
 
@@ -56,11 +47,8 @@ public class FishPoints : MonoBehaviour
 
         if (other.gameObject.TryGetComponent(out Column column))
         {
-<<<<<<< HEAD
             transform.position = new Vector3(transform.position.x + 4, transform.position.y, transform.position.z);
-=======
             transform.position = new Vector3(transform.position.x + 10, transform.position.y, transform.position.z);
->>>>>>> master
         }
     }
 
@@ -68,11 +56,8 @@ public class FishPoints : MonoBehaviour
     {
         transform.position = _startPosition;
         _meshRenderer.enabled = true;
-<<<<<<< HEAD
         isUsed = false;
-=======
         _isUsed = false;
->>>>>>> master
         _glowParticle.gameObject.SetActive(true);
     }
 }
