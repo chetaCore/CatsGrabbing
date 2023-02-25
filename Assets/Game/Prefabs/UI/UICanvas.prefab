@@ -1,10 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
 --- !u!1 &2362307539820600881
-=======
 --- !u!1 &630819029
->>>>>>> master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,16 +9,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 2362307539820600880}
   - component: {fileID: 2362307539820600894}
   - component: {fileID: 2362307539820600895}
-=======
   - component: {fileID: 630819030}
   - component: {fileID: 630819033}
   - component: {fileID: 630819032}
   - component: {fileID: 630819031}
->>>>>>> master
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -29,27 +23,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &2362307539820600880
-=======
 --- !u!224 &630819030
->>>>>>> master
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 2362307539820600881}
-=======
   m_GameObject: {fileID: 630819029}
->>>>>>> master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-<<<<<<< HEAD
   m_Father: {fileID: 2362307539999131082}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59,7 +46,6 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2362307539820600894
-=======
   m_Father: {fileID: 2095653168}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -69,31 +55,24 @@ RectTransform:
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &630819033
->>>>>>> master
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 2362307539820600881}
   m_CullTransparentMesh: 1
 --- !u!114 &2362307539820600895
-=======
   m_GameObject: {fileID: 630819029}
   m_CullTransparentMesh: 1
 --- !u!114 &630819032
->>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 2362307539820600881}
-=======
   m_GameObject: {fileID: 630819029}
->>>>>>> master
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -109,13 +88,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: Restart?
   m_isRightToLeft: 0
-<<<<<<< HEAD
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-=======
   m_fontAsset: {fileID: 11400000, guid: 63f813224aeb0ee4ca13b194e06c3a94, type: 2}
   m_sharedMaterial: {fileID: -4272398670588465340, guid: 63f813224aeb0ee4ca13b194e06c3a94, type: 2}
->>>>>>> master
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3257,8 +3233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startButton: {fileID: 2362307541387681592}
-<<<<<<< HEAD
-=======
 --- !u!1001 &2362307540047910551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3427,4 +3401,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 488062, guid: 661f21b6e6d0a6543a4a1a9122f017b0, type: 3}
   m_PrefabInstance: {fileID: 2362307541895845053}
   m_PrefabAsset: {fileID: 0}
->>>>>>> master
